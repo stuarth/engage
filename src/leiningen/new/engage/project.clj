@@ -1,4 +1,4 @@
-(defproject {{name}} "0.1.0-SNAPSHOT"
+(defproject {{name}} "0.1.0"
   :description ""
   :url ""
   :min-lein-version "2.0.0"
@@ -11,13 +11,13 @@
          :init {{name}}.handler/init}
 
   :profiles {:dev {:source-paths ["dev"]
-                   :dependencies [[lein-cljsbuild "0.3.4"]
+                   :dependencies [[lein-cljsbuild "1.0.0-alpha2"]
                                   [lein-ring "0.8.8"]
                                   [ring-mock "0.1.5"]
                                   [ring/ring-jetty-adapter "1.2.0"]
-                                  [org.clojure/clojurescript "0.0-1934"]]
+                                  [org.clojure/clojurescript "0.0-2030"]]
                    :plugins [[com.keminglabs/cljx "0.3.0"]
-                             [com.cemerick/austin "0.1.1"]
+                             [com.cemerick/austin "0.1.3"]
                              [lein-ring "0.8.7"]]}}
 
   :source-paths ["target/generated/clj" "src/clj"]
